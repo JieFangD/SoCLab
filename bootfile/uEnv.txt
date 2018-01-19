@@ -1,0 +1,2 @@
+modeboot=sdboot
+sdboot=if mmcinfo; then run uenvboot; echo Copying Linux from SD to RAM... && load mmc 0 ${kernel_load_address} ${kernel_image} && bootm ${kernel_load_address}; fi
