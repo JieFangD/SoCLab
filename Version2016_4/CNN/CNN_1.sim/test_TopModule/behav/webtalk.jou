@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Jan 19 11:17:58 2018
+# Process ID: 20660
+# Current directory: C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.sim/test_TopModule/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.sim/test_TopModule/behav/xsim.dir/cnn_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.sim/test_TopModule/behav/webtalk.log
+# Journal file: C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.sim/test_TopModule/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.sim/test_TopModule/behav/xsim.dir/cnn_behav/webtalk/xsim_webtalk.tcl -notrace

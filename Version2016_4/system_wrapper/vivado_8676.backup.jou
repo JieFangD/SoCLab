@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Jan 13 23:38:39 2018
+# Process ID: 8676
+# Current directory: C:/Xilinx/Vivado/2016.4/bin
+# Command line: vivado.exe
+# Log file: C:/Xilinx/Vivado/2016.4/bin/vivado.log
+# Journal file: C:/Xilinx/Vivado/2016.4/bin\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Stu/Desktop/system_wrapper/system_wrapper.xpr
+archive_project C:/Users/Stu/Desktop/system_wrapper.xpr.zip -temp_dir C:/temp -force -include_config_settings

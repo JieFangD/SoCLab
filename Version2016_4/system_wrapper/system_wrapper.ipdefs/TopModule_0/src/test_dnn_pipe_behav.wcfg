@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_dnn_pipe_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_dnn_pipe" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="9975100000fs"></ZoomStartTime>
+      <ZoomEndTime time="10060900001fs"></ZoomEndTime>
+      <Cursor1Time time="9995000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="59"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="35" />
+   <wvobject fp_name="/test_dnn_pipe/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/pic" type="array">
+      <obj_property name="ElementShortName">pic[6271:0]</obj_property>
+      <obj_property name="ObjectShortName">pic[6271:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_dnn/i_dnn/in_r" type="array">
+      <obj_property name="ElementShortName">in_r[6271:0]</obj_property>
+      <obj_property name="ObjectShortName">in_r[6271:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_dnn/i_dnn/state_r" type="array">
+      <obj_property name="ElementShortName">state_r[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state_r[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/out" type="array">
+      <obj_property name="ElementShortName">out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">out[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/fc1" type="array">
+      <obj_property name="ElementShortName">fc1[0:7849][7:0]</obj_property>
+      <obj_property name="ObjectShortName">fc1[0:7849][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/image" type="array">
+      <obj_property name="ElementShortName">image[0:783][7:0]</obj_property>
+      <obj_property name="ObjectShortName">image[0:783][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_dnn/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_dnn/state_r" type="array">
+      <obj_property name="ElementShortName">state_r[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state_r[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_dnn/bias_r" type="array">
+      <obj_property name="ElementShortName">bias_r[79:0]</obj_property>
+      <obj_property name="ObjectShortName">bias_r[79:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_dnn/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_dnn/i_dnn/out_r" type="array">
+      <obj_property name="ElementShortName">out_r[9:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_r[9:0][7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_dnn/douta" type="array">
+      <obj_property name="ElementShortName">douta[7:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_dnn/addra_r" type="array">
+      <obj_property name="ElementShortName">addra_r[12:0]</obj_property>
+      <obj_property name="ObjectShortName">addra_r[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_dnn/start_dnn" type="logic">
+      <obj_property name="ElementShortName">start_dnn</obj_property>
+      <obj_property name="ObjectShortName">start_dnn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_dnn/i_dnn/state_r" type="array">
+      <obj_property name="ElementShortName">state_r[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state_r[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_dnn/finish" type="logic">
+      <obj_property name="ElementShortName">finish</obj_property>
+      <obj_property name="ObjectShortName">finish</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_imag/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_imag/state_r" type="array">
+      <obj_property name="ElementShortName">state_r[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state_r[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/dinb" type="array">
+      <obj_property name="ElementShortName">dinb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dinb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/doutb" type="array">
+      <obj_property name="ElementShortName">doutb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/addrb" type="array">
+      <obj_property name="ElementShortName">addrb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_imag/cnt_r" type="array">
+      <obj_property name="ElementShortName">cnt_r[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_r[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_imag/image_r" type="array">
+      <obj_property name="ElementShortName">image_r[6271:0]</obj_property>
+      <obj_property name="ObjectShortName">image_r[6271:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_imag/dout" type="array">
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_imag/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/douta" type="array">
+      <obj_property name="ElementShortName">douta[31:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/addra" type="array">
+      <obj_property name="ElementShortName">addra[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/web" type="logic">
+      <obj_property name="ElementShortName">web</obj_property>
+      <obj_property name="ObjectShortName">web</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_dnn_pipe/i_dnn/i_dnn/getinput_r" type="logic">
+      <obj_property name="ElementShortName">getinput_r</obj_property>
+      <obj_property name="ObjectShortName">getinput_r</obj_property>
+   </wvobject>
+</wave_config>

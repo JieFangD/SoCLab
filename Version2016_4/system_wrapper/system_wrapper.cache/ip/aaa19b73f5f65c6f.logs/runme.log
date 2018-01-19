@@ -1,0 +1,888 @@
+
+*** Running vivado
+    with args -log design_1_TopModule_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_TopModule_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_TopModule_0_0.tcl -notrace
+Command: synth_design -top design_1_TopModule_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15624 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 324.301 ; gain = 114.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_TopModule_0_0' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/synth/design_1_TopModule_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'TopModule' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter PIX_W bound to: 28 - type: integer 
+	Parameter PIX_H bound to: 28 - type: integer 
+	Parameter OUTNODE bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'image' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/image.v:2]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter PIX_W bound to: 28 - type: integer 
+	Parameter PIX_H bound to: 28 - type: integer 
+	Parameter DETECT bound to: 2'b00 
+	Parameter WRITE bound to: 2'b01 
+	Parameter READ bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/image.v:35]
+INFO: [Synth 8-256] done synthesizing module 'image' (1#1) [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/image.v:2]
+INFO: [Synth 8-638] synthesizing module 'dnn_pipe' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/dnn_pipe.v:2]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter PIX_W bound to: 28 - type: integer 
+	Parameter PIX_H bound to: 28 - type: integer 
+	Parameter OUTNODE bound to: 10 - type: integer 
+	Parameter INNODE bound to: 784 - type: integer 
+	Parameter STAR bound to: 2'b00 
+	Parameter BIAS bound to: 2'b01 
+	Parameter WEIGHT bound to: 2'b10 
+	Parameter END bound to: 2'b11 
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/blk_mem_gen_2/synth/blk_mem_gen_2.vhd:67]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: blk_mem_gen_2.mif - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_2.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 7850 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 7850 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 13 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 7850 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 7850 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 13 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 2 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.3264 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_5' declared at 'c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/blk_mem_gen_2/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195251' bound to instance 'U0' of component 'blk_mem_gen_v8_3_5' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/blk_mem_gen_2/synth/blk_mem_gen_2.vhd:226]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (12#1) [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/blk_mem_gen_2/synth/blk_mem_gen_2.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'dense_layer_pipe' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/dense_layer_pipe.v:3]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter INNODE bound to: 784 - type: integer 
+	Parameter OUTNODE bound to: 10 - type: integer 
+	Parameter STAR bound to: 2'b00 
+	Parameter CALC bound to: 2'b01 
+	Parameter NEXT bound to: 2'b10 
+	Parameter END bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'dense_layer_pipe' (13#1) [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/dense_layer_pipe.v:3]
+INFO: [Synth 8-638] synthesizing module 'max' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/max.v:2]
+	Parameter INNODE bound to: 10 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter STAR bound to: 2'b00 
+	Parameter CALC bound to: 2'b01 
+	Parameter END bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/max.v:28]
+INFO: [Synth 8-256] done synthesizing module 'max' (14#1) [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/max.v:2]
+INFO: [Synth 8-256] done synthesizing module 'dnn_pipe' (15#1) [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/dnn_pipe.v:2]
+WARNING: [Synth 8-689] width (8) of port connection 'out' does not match port width (4) of module 'dnn_pipe' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:28]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net LED[4] with 1st driver pin 'TopModule:/doutb[28]' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net LED[4] with 2nd driver pin 'GND' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net LED[4] is connected to constant driver, other driver is ignored [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net LED[5] with 1st driver pin 'TopModule:/doutb[29]' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net LED[5] with 2nd driver pin 'GND' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net LED[5] is connected to constant driver, other driver is ignored [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net LED[6] with 1st driver pin 'TopModule:/doutb[30]' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net LED[6] with 2nd driver pin 'GND' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net LED[6] is connected to constant driver, other driver is ignored [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net LED[7] with 1st driver pin 'TopModule:/doutb[31]' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net LED[7] with 2nd driver pin 'GND' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net LED[7] is connected to constant driver, other driver is ignored [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+INFO: [Synth 8-256] done synthesizing module 'TopModule' (16#1) [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+INFO: [Synth 8-256] done synthesizing module 'design_1_TopModule_0_0' (17#1) [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/synth/design_1_TopModule_0_0.v:57]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_RST[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_LAT_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_REG_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_REGCE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_REGCE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port WE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port MUX_RST[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port MEM_LAT_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port MUX_REGCE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port WE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port SBITERRIN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port SBITERRIN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port DBITERRIN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port DBITERRIN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ENB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ADDRB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ram_rstram_b
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized0 has unconnected port ram_rstreg_b
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ENB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[6]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 526.477 ; gain = 316.535
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[31] with 1st driver pin 'doutb[31]' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/synth/design_1_TopModule_0_0.v:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[31] with 2nd driver pin 'GND' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[30] with 1st driver pin 'doutb[30]' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/synth/design_1_TopModule_0_0.v:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[30] with 2nd driver pin 'GND' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[29] with 1st driver pin 'doutb[29]' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/synth/design_1_TopModule_0_0.v:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[29] with 2nd driver pin 'GND' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[28] with 1st driver pin 'doutb[28]' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/synth/design_1_TopModule_0_0.v:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[28] with 2nd driver pin 'GND' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        4|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 526.477 ; gain = 316.535
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc] for cell 'inst'
+WARNING: [Vivado 12-584] No ports matched 'rst'. [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst'. [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_TopModule_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_TopModule_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.runs/design_1_TopModule_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.runs/design_1_TopModule_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 731.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 731.836 ; gain = 521.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 731.836 ; gain = 521.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/i_dnn/i_blk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/i_dnn/i_blk/U0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 731.836 ; gain = 521.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "state_w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "cnt_w" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "valid_w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_w" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_w" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "start_dnn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "start_dnn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_w" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'state_w_reg' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/image.v:37]
+WARNING: [Synth 8-327] inferring latch for variable 'state_w_reg' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/max.v:30]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 731.836 ; gain = 521.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register image_r_reg [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/image.v:87]
+INFO: [Synth 8-3538] Detected potentially large (wide) register in_r_reg [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/dense_layer_pipe.v:98]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	             6272 Bit    Registers := 2     
+	               80 Bit    Registers := 2     
+	               72 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               13 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 15    
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   6272 Bit        Muxes := 1     
+	   2 Input     80 Bit        Muxes := 1     
+	   2 Input     72 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 38    
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register image_r_reg [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/image.v:87]
+INFO: [Synth 8-3538] Detected potentially large (wide) register in_r_reg [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/dense_layer_pipe.v:98]
+Hierarchical RTL Component report 
+Module image 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	             6272 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module dense_layer_pipe 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	             6272 Bit    Registers := 1     
+	               80 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 12    
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   6272 Bit        Muxes := 1     
+	   2 Input     80 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module max 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               72 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     72 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+Module dnn_pipe 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 2     
++---Registers : 
+	               80 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 10    
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "i_dnn/state_w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i_dnn/start_dnn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[30] )
+INFO: [Synth 8-3886] merging instance 'inst/i_dnn/i_dnn/bias_r_reg[0]' (FDCE) to 'inst/i_dnn/i_dnn/bias_r_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/i_dnn/i_dnn/bias_r_reg[1]' (FDCE) to 'inst/i_dnn/i_dnn/bias_r_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/i_dnn/i_dnn/bias_r_reg[2]' (FDCE) to 'inst/i_dnn/i_dnn/bias_r_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/i_dnn/i_dnn/bias_r_reg[3]' (FDCE) to 'inst/i_dnn/i_dnn/bias_r_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/i_dnn/i_dnn/bias_r_reg[4]' (FDCE) to 'inst/i_dnn/i_dnn/bias_r_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/i_dnn/i_dnn/bias_r_reg[5]' (FDCE) to 'inst/i_dnn/i_dnn/bias_r_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/i_dnn/i_dnn/bias_r_reg[6]' (FDCE) to 'inst/i_dnn/i_dnn/bias_r_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_dnn/i_dnn /\bias_r_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/state_w_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\i_imag/getpic_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/din_r_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/we_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[67] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[69] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[68] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[65] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[66] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[70] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[103] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[75] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[99] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[77] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[101] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_imag/image_r_reg[76] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (i_imag/state_w_reg[1]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/state_w_reg[0]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (bias_r_reg[7]) is unused and will be removed from module dense_layer_pipe.
+WARNING: [Synth 8-3332] Sequential element (getinput_r_reg) is unused and will be removed from module dense_layer_pipe.
+WARNING: [Synth 8-3332] Sequential element (i_imag/state_r_reg[1]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/state_r_reg[0]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/getpic_r_reg) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/we_r_reg) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/addr_r_reg[7]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/addr_r_reg[6]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/addr_r_reg[5]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/addr_r_reg[4]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/addr_r_reg[3]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/addr_r_reg[2]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/addr_r_reg[1]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/addr_r_reg[0]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[31]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[30]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[29]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[28]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[27]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[26]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[25]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[24]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[23]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[22]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[21]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[20]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[19]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[18]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[17]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[16]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[15]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[14]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[13]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[12]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[11]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[10]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[9]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[8]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[7]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[6]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[5]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[4]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[3]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[2]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[1]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/din_r_reg[0]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6271]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6270]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6269]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6268]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6267]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6266]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6265]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6264]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6263]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6262]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6261]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6260]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6259]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6258]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6257]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6256]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6255]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6254]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6253]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6252]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6251]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6250]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6249]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6248]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6247]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6246]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6245]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6244]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6243]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6242]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6241]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6240]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6239]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6238]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6237]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6236]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6235]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6234]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6233]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6232]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6231]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6230]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6229]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6228]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6227]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6226]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6225]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6224]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6223]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6222]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6221]) is unused and will be removed from module TopModule.
+WARNING: [Synth 8-3332] Sequential element (i_imag/image_r_reg[6220]) is unused and will be removed from module TopModule.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:19 . Memory (MB): peak = 731.836 ; gain = 521.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:28 . Memory (MB): peak = 731.836 ; gain = 521.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:33 ; elapsed = 00:01:37 . Memory (MB): peak = 847.891 ; gain = 637.949
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/i_dnn/i_max0/idx_r_reg[0]' (FDCE) to 'inst/i_dnn/i_max0/idx_r_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/i_dnn/i_max0/idx_r_reg[1]' (FDCE) to 'inst/i_dnn/i_max0/idx_r_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/i_dnn/i_max0/idx_r_reg[2]' (FDCE) to 'inst/i_dnn/i_max0/idx_r_reg[3]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:34 ; elapsed = 00:01:38 . Memory (MB): peak = 863.078 ; gain = 653.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:35 ; elapsed = 00:01:39 . Memory (MB): peak = 863.078 ; gain = 653.137
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[31] with 1st driver pin 'doutb[31]' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/synth/design_1_TopModule_0_0.v:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[31] with 2nd driver pin 'GND' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[30] with 1st driver pin 'doutb[30]' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/synth/design_1_TopModule_0_0.v:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[30] with 2nd driver pin 'GND' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[29] with 1st driver pin 'doutb[29]' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/synth/design_1_TopModule_0_0.v:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[29] with 2nd driver pin 'GND' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[28] with 1st driver pin 'doutb[28]' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/synth/design_1_TopModule_0_0.v:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net doutb[28] with 2nd driver pin 'GND' [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ipshared/c5d8/src/TopModule.v:2]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        4|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:35 ; elapsed = 00:01:39 . Memory (MB): peak = 863.078 ; gain = 653.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:35 ; elapsed = 00:01:39 . Memory (MB): peak = 863.078 ; gain = 653.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:35 ; elapsed = 00:01:39 . Memory (MB): peak = 863.078 ; gain = 653.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:35 ; elapsed = 00:01:39 . Memory (MB): peak = 863.078 ; gain = 653.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:35 ; elapsed = 00:01:39 . Memory (MB): peak = 863.078 ; gain = 653.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |LUT1       |     1|
+|2     |LUT3       |     8|
+|3     |RAMB36E1   |     1|
+|4     |RAMB36E1_1 |     1|
+|5     |FDCE       |     6|
+|6     |FDRE       |     2|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------+----------------------------------------------+------+
+|      |Instance                                           |Module                                        |Cells |
++------+---------------------------------------------------+----------------------------------------------+------+
+|1     |top                                                |                                              |    19|
+|2     |  inst                                             |TopModule                                     |    19|
+|3     |    i_dnn                                          |dnn_pipe                                      |    19|
+|4     |      i_blk                                        |blk_mem_gen_2                                 |    13|
+|5     |        U0                                         |blk_mem_gen_v8_3_5                            |    13|
+|6     |          inst_blk_mem_gen                         |blk_mem_gen_v8_3_5_synth                      |    13|
+|7     |            \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                               |    13|
+|8     |              \valid.cstr                          |blk_mem_gen_generic_cstr                      |    13|
+|9     |                \has_mux_a.A                       |blk_mem_gen_mux                               |    10|
+|10    |                \ramloop[0].ram.r                  |blk_mem_gen_prim_width                        |     2|
+|11    |                  \prim_init.ram                   |blk_mem_gen_prim_wrapper_init                 |     2|
+|12    |                \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0        |     1|
+|13    |                  \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized0 |     1|
++------+---------------------------------------------------+----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:35 ; elapsed = 00:01:39 . Memory (MB): peak = 863.078 ; gain = 653.137
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 8 critical warnings and 13141 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:01:26 . Memory (MB): peak = 863.078 ; gain = 411.879
+Synthesis Optimization Complete : Time (s): cpu = 00:01:35 ; elapsed = 00:01:39 . Memory (MB): peak = 863.078 ; gain = 653.137
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc] for cell 'inst'
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:12]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:13]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:14]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:15]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:16]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:17]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:18]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst'. [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [c:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.srcs/sources_1/bd/design_1/ip/design_1_TopModule_0_0/src/constraint.xdc] for cell 'inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+162 Infos, 207 Warnings, 40 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:01:37 . Memory (MB): peak = 863.078 ; gain = 617.238
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jeff/Version2016_4/system_wrapper_v2/system_wrapper.runs/design_1_TopModule_0_0_synth_1/design_1_TopModule_0_0.dcp' has been generated.

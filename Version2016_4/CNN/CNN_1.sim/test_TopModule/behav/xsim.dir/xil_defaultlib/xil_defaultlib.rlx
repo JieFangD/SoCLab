@@ -1,0 +1,13 @@
+0.6
+2016.4
+Jan 23 2017
+19:37:30
+C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.sim/test_TopModule/behav/glbl.v,1485222234,verilog,,,,glbl,,,,,,,,
+C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1516084747,verilog,,,,blk_mem_gen_0,,,,,,,,
+C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,1516331822,verilog,,,,blk_mem_gen_1,,,,,,,,
+C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.srcs/sources_1/new/TopModule.v,1516085746,verilog,,,,TopModule,,,,,,,,
+C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.srcs/sources_1/new/dense_layer_pipe.v,1515758037,verilog,,,,dense_layer_pipe,,,,,,,,
+C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.srcs/sources_1/new/dnn_pipe.v,1515754458,verilog,,,,dnn_pipe,,,,,,,,
+C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.srcs/sources_1/new/image.v,1515754729,verilog,,,,image,,,,,,,,
+C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.srcs/sources_1/new/max.v,1515499431,verilog,,,,max,,,,,,,,
+C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.srcs/test_TopModule/new/test_TopModule.v,1516084407,verilog,,,,test_TopModule,,,,,,,,

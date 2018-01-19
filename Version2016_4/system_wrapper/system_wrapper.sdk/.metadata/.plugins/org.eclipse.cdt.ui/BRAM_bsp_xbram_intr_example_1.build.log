@@ -1,0 +1,13 @@
+21:21:03 **** Build of configuration Debug for project BRAM_bsp_xbram_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xbram_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xbram_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../BRAM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xbram_intr_example.d" -MT"src/xbram_intr_example.o" -o "src/xbram_intr_example.o" "../src/xbram_intr_example.c"
+../src/xbram_intr_example.c:60:19: fatal error: xintc.h: No such file or directory
+compilation terminated.
+make: *** [src/xbram_intr_example.o] Error 1
+
+21:21:03 Build Finished (took 306ms)
+

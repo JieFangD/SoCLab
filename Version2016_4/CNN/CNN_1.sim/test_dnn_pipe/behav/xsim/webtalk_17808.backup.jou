@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Jan  9 11:47:50 2018
+# Process ID: 17808
+# Current directory: C:/Users/Jeff/Google/CNN_1/CNN_1.sim/test_dnn_pipe/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Jeff/Google/CNN_1/CNN_1.sim/test_dnn_pipe/behav/xsim/xsim.dir/test_dnn_pipe_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Jeff/Google/CNN_1/CNN_1.sim/test_dnn_pipe/behav/xsim/webtalk.log
+# Journal file: C:/Users/Jeff/Google/CNN_1/CNN_1.sim/test_dnn_pipe/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Jeff/Google/CNN_1/CNN_1.sim/test_dnn_pipe/behav/xsim/xsim.dir/test_dnn_pipe_behav/webtalk/xsim_webtalk.tcl -notrace

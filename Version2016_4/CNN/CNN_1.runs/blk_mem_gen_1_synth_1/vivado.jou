@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Jan 16 15:08:08 2018
+# Process ID: 2316
+# Current directory: C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.runs/blk_mem_gen_1_synth_1
+# Command line: vivado.exe -log blk_mem_gen_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_1.tcl
+# Log file: C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.vds
+# Journal file: C:/Users/Jeff/Version2016_4/CNN_1/CNN_1.runs/blk_mem_gen_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_1.tcl -notrace

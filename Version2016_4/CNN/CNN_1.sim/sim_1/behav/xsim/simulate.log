@@ -1,0 +1,6 @@
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+************************************************************
+               15018 Finish testing with no error
+************************************************************
+$finish called at time : 15017500 ps : File "C:/Users/Jeff/Google/CNN_1/CNN_1.srcs/sim_1/new/test_cnn.v" Line 87

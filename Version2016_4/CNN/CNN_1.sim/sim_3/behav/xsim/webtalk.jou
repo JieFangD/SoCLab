@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sun Jan  7 10:49:43 2018
+# Process ID: 14132
+# Current directory: C:/Users/Jeff/Google/CNN_1/CNN_1.sim/sim_3/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Jeff/Google/CNN_1/CNN_1.sim/sim_3/behav/xsim/xsim.dir/test_dense_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Jeff/Google/CNN_1/CNN_1.sim/sim_3/behav/xsim/webtalk.log
+# Journal file: C:/Users/Jeff/Google/CNN_1/CNN_1.sim/sim_3/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Jeff/Google/CNN_1/CNN_1.sim/sim_3/behav/xsim/xsim.dir/test_dense_behav/webtalk/xsim_webtalk.tcl -notrace

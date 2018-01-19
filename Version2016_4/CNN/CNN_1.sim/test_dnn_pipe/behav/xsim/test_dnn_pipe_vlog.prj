@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CNN_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../CNN_1.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" \
+"../../../../CNN_1.srcs/sources_1/new/dense_layer_pipe.v" \
+"../../../../CNN_1.srcs/sources_1/new/dnn_pipe.v" \
+"../../../../CNN_1.srcs/sources_1/new/image.v" \
+"../../../../CNN_1.srcs/sources_1/new/max.v" \
+"../../../../CNN_1.srcs/test_dnn_pipe/new/test_dnn_pipe.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
