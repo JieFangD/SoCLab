@@ -1,0 +1,9 @@
+kernel/net/802/p8022.ko
+kernel/net/802/psnap.ko
+kernel/net/802/stp.ko
+kernel/net/ipv4/ipip.ko
+kernel/net/8021q/8021q.ko
+kernel/net/wireless/cfg80211.ko
+kernel/net/llc/llc.ko
+kernel/net/bridge/bridge.ko
+kernel/net/mac80211/mac80211.ko

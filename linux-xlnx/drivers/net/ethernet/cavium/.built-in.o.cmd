@@ -1,0 +1,1 @@
+cmd_drivers/net/ethernet/cavium/built-in.o :=  arm-xilinx-linux-gnueabi-ld -EL    -r -o drivers/net/ethernet/cavium/built-in.o drivers/net/ethernet/cavium/thunder/built-in.o drivers/net/ethernet/cavium/liquidio/built-in.o drivers/net/ethernet/cavium/octeon/built-in.o 

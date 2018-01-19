@@ -1,0 +1,1 @@
+cmd_drivers/usb/gadget/legacy/gadgetfs.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/gadget/legacy/gadgetfs.ko drivers/usb/gadget/legacy/gadgetfs.o drivers/usb/gadget/legacy/gadgetfs.mod.o

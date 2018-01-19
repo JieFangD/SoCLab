@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/realtek/rtlwifi/rtl8192c/built-in.o :=  rm -f drivers/net/wireless/realtek/rtlwifi/rtl8192c/built-in.o; arm-xilinx-linux-gnueabi-ar rcsD drivers/net/wireless/realtek/rtlwifi/rtl8192c/built-in.o

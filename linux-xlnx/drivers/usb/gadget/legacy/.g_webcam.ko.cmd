@@ -1,0 +1,1 @@
+cmd_drivers/usb/gadget/legacy/g_webcam.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/gadget/legacy/g_webcam.ko drivers/usb/gadget/legacy/g_webcam.o drivers/usb/gadget/legacy/g_webcam.mod.o

@@ -1,0 +1,2 @@
+kernel/drivers/usb/usbip/usbip-core.ko
+kernel/drivers/usb/usbip/usbip-host.ko

@@ -1,0 +1,1 @@
+cmd_drivers/usb/gadget/legacy/g_acm_ms.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/gadget/legacy/g_acm_ms.ko drivers/usb/gadget/legacy/g_acm_ms.o drivers/usb/gadget/legacy/g_acm_ms.mod.o

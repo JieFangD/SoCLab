@@ -1,0 +1,1 @@
+cmd_crypto/built-in.o :=  arm-xilinx-linux-gnueabi-ld -EL    -r -o crypto/built-in.o crypto/crypto.o crypto/crypto_wq.o crypto/crypto_algapi.o crypto/aead.o crypto/crypto_blkcipher.o crypto/chainiv.o crypto/eseqiv.o crypto/crypto_hash.o crypto/akcipher.o crypto/cryptomgr.o crypto/crypto_null.o crypto/aes_generic.o crypto/crc32c_generic.o crypto/rng.o 

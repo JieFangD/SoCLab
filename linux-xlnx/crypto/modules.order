@@ -1,0 +1,12 @@
+kernel/crypto/seqiv.ko
+kernel/crypto/echainiv.ko
+kernel/crypto/hmac.ko
+kernel/crypto/sha256_generic.ko
+kernel/crypto/gf128mul.ko
+kernel/crypto/ctr.ko
+kernel/crypto/gcm.ko
+kernel/crypto/ccm.ko
+kernel/crypto/arc4.ko
+kernel/crypto/drbg.ko
+kernel/crypto/jitterentropy_rng.ko
+kernel/crypto/ghash-generic.ko

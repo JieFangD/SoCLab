@@ -1,0 +1,1 @@
+cmd_drivers/remoteproc/mb_remoteproc.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/remoteproc/mb_remoteproc.ko drivers/remoteproc/mb_remoteproc.o drivers/remoteproc/mb_remoteproc.mod.o
